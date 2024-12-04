@@ -12,6 +12,15 @@ const nextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/dashboard/home/overview",
+        permanent: true, // Gunakan true jika ini redirect permanen
+      },
+    ];
+  },
 };
 
 export default nextConfig;
